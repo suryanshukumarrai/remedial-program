@@ -1,0 +1,62 @@
+/* Lightweight enhancements for the landing page */
+
+.hero-landing {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(13, 110, 253, 0.12), transparent 60%),
+              radial-gradient(800px 400px at 90% 20%, rgba(32, 201, 151, 0.12), transparent 60%);
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #0d6efd 0%, #20c997 100%);
+  color: #fff;
+  border: 0;
+  box-shadow: 0 0.5rem 1rem rgba(13, 110, 253, 0.15);
+}
+.btn-gradient:hover { filter: brightness(0.95); color: #fff; }
+
+.fade-up { opacity: 0; transform: translateY(8px); animation: fadeUp 0.6s ease forwards; }
+.fade-up:nth-child(2) { animation-delay: .05s; }
+.fade-up:nth-child(3) { animation-delay: .1s; }
+@keyframes fadeUp { to { opacity: 1; transform: none; } }
+
+.card-course .course-title { font-weight: 600; }
+
+.instructor-card { border: 1px solid rgba(0,0,0,.05); }
+.instructor-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  display: grid; place-items: center; font-weight: 700; color: #0d6efd;
+  background: rgba(13,110,253,.08);
+}
+.view-profile-btn { color: #0d6efd; text-decoration: none; }
+.view-profile-btn:hover { text-decoration: underline; }
+
+.body_wrapper { padding-bottom: 2rem; }
+
+/* Navbar user area */
+.user-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .375rem .6rem;
+  border-radius: 999px;
+  background: #f1f3f5;
+  border: 1px solid rgba(0,0,0,.08);
+  color: #212529;
+}
+.user-initial {
+  width: 26px; height: 26px; border-radius: 50%;
+  display: grid; place-items: center; font-weight: 700; font-size: .85rem;
+  color: #0d6efd; background: rgba(13,110,253,.12);
+}
+.user-name { font-weight: 600; }
+
+.btn-logout {
+  border: 1px solid #20c997;
+  color: #20c997;
+  background: transparent;
+}
+.btn-logout:hover {
+  background: #20c997;
+  color: #fff;
+}
+
+
